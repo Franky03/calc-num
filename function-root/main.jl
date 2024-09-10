@@ -5,6 +5,8 @@ using .FalsaPosicao
 include("newton-rahpson.jl")
 using .NewthonRaphson
 
+using Plots
+
 function v(t)
     u = 200
     M0 = 1600
@@ -21,6 +23,13 @@ b = 8
 println("Questão 1: Usando Método da Bissecção")
 root = bissection(v, a, b, tol=0.008)
 println("Time to reach 100m/s: $root")
+
+#plotting 
+t = range(a,b, length=100)
+plot(t, v.(t) .+ 100, label="v(t)", xlabel="Time (s)", ylabel="Velocity (m/s)")
+plot!([root], [v(root)+100], seriestype=:scatter, label="Root", legend=:top)
+
+savefig("velocity.png")
 
 println("Questão 4: Usando Método da Falsa Posição")
 
@@ -60,3 +69,10 @@ tol = 0.01
 root = newton_raphson(f, df, x0, tol=tol)
 
 println("Time to reach 4mg/L: $root")
+
+# Plotting
+x = range(0, 10, length=100)
+plot(x, f.(x) .+4, label="f(x)", xlabel="x", ylabel="Oxygen Level (mg/L)")
+plot!([root], [f(root)+4], seriestype=:scatter, label="Root", legend=:top)
+
+savefig("oxygen.png")
