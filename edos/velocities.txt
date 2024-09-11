@@ -1,0 +1,11 @@
+Tempo: 0.0 s -> Velocidade: 8.0 m/s
+Tempo: 0.1 s -> Velocidade: 8.8508 m/s
+Tempo: 0.2 s -> Velocidade: 9.6746 m/s
+Tempo: 0.3 s -> Velocidade: 10.4699 m/s
+Tempo: 0.4 s -> Velocidade: 11.2356 m/s
+Tempo: 0.5 s -> Velocidade: 11.9706 m/s
+Tempo: 0.6 s -> Velocidade: 12.6744 m/s
+Tempo: 0.7 s -> Velocidade: 13.3464 m/s
+Tempo: 0.8 s -> Velocidade: 13.9866 m/s
+Tempo: 0.9 s -> Velocidade: 14.5951 m/s
+Tempo: 1.0 s -> Velocidade: 15.1721 m/s

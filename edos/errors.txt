@@ -1,0 +1,5 @@
+Método de Euler: y(1) = 1.8269481804182377
+Método de Runge-Kutta de 3ª ordem: y(1) = 1.7324718336701308
+Solução exata: y(1) = 1.7320508075688772
+Erro absoluto (Euler): 0.0948973728493605
+Erro absoluto (Runge-Kutta): 0.0004210261012536076

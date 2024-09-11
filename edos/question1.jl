@@ -59,3 +59,12 @@ println("Erro absoluto (Euler): ", erro_euler)
 println("Método de Runge-Kutta de 3ª ordem: y(1) = ", y_rk3)
 println("Erro absoluto (Runge-Kutta): ", erro_rk3)
 
+open("errors.txt", "w") do file
+    println(file, "Método de Euler: y(1) = ", y_euler)
+    println(file, "Método de Runge-Kutta de 3ª ordem: y(1) = ", y_rk3)
+    println(file, "Solução exata: y(1) = ", y_exact)
+    println(file, "Erro absoluto (Euler): ", erro_euler)
+    println(file, "Erro absoluto (Runge-Kutta): ", erro_rk3)
+end
+
+
